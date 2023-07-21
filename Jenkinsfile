@@ -6,9 +6,9 @@ pipeline {
     }
   }
   stages {
-    stage ('main branch index.html') {
+    stage ('23q1 branch index.html') {
       steps {
-        echo "main branch"
+        echo "23q1 branch"
         sh 'cp -r /mnt/myrepository/index.html /var/www/html'
         sh 'chmod -R 777 /var/www/html/index.html'
       }
