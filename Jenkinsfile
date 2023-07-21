@@ -6,11 +6,12 @@ pipeline {
     }
   }
   stages {
+	  
     stage ('clean workspace') {
-			steps {
-				cleanWs()
-			}
+		steps {
+			cleanWs()
 		}
+	}
 	  
     stage ('23q1 branch index.html') {
       steps {
