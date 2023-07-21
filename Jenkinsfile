@@ -9,7 +9,7 @@ pipeline {
 	  
     stage ('clean workspace') {
 		steps {
-			cleanWs()
+			sh 'rm -rf /mnt/myrepository'
 		}
 	}
 	  
