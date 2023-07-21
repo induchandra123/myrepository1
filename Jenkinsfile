@@ -7,12 +7,6 @@ pipeline {
   }
   stages {
 	  
-    stage ('clean workspace') {
-		steps {
-			sh 'rm -rf /mnt/myrepository'
-		}
-	}
-	  
     stage ('23q1 branch index.html') {
       steps {
         echo "23q1 branch"
